@@ -1,0 +1,65 @@
+.weather{
+    padding: 5% 0 0 5%;
+}
+section{
+    
+    min-height: 100vh;
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    border: none;
+    background-color: transparent;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    .title{
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        font-size: 28px;
+        color: #0cf01b;
+    }
+
+    .btn {
+        margin-top: 2rem;
+        align-self: center;
+    }
+    .btn.btn-info{
+        background-color: #c4c8c4;
+    }
+    .joke{
+        color: #3f413f;
+    }
+    
+}
+
+#temperature{
+    width: 200px;
+    height: 120px;
+    animation: colorchange 3s; /* animation-name followed by duration in seconds*/ 
+    animation-timing-function: ease-in-out; 
+    animation-iteration-count: infinite; 
+    animation-play-state: running;
+}
+@keyframes colorchange { 
+    0% { color: #ff0000; } 
+    14% { color: #ffa500; } 
+    28% { color: #5a5a00; } 
+    42% { color: #008000; } 
+    56% { color: #0000ff; }
+    70% { color: #4b0082; } 
+    84% { color: #7f007f; } 
+    100% { color: #ff0000; }
+}
+
+
+
+
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";

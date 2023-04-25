@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint 5 Carlota Figueras</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="icon" type="image/cloud-icon" href="image/cloudy.png">
+    <script src="https://kit.fontawesome.com/5132602d67.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="weather fs-5" style="position: absolute; overflow:hidden">
+    <span id="icon" style="height:100vh"></span>
+    <span id="temperature" ></span>
+  </div>
+      <style>
+        body {
+          background-image: url(image/4blob.svg);
+          background-attachment: cover;
+          background-repeat:no-repeat;
+          background-size:100% 100%;
+          }
+      </style>
+<div class="container-fluid d-flex justify-content-center align-items-center" style="height:100vh; overflow:hidden">
+  <div class="row text-center d-flex align-items-center" style="overflow:hidden; width:100vw">
+  <section>
+        <div class="container">
+          <h2 class="title">Preparat per riure?<br><br> &#129315  &#129315 &#129315</h2>
+          
+          <p class="joke">Lorem ipsum adipisicing elit.</p>
+          <div class="score" style="display:none"><br>
+            <id="bottunLike" onclick="addToList(1), vote()"><i class="btn btn-success btn-lg fa-solid fa-regular fa-face-smile fa-beat bd-highlight m-1 shadow mb-4" style="--fa-animation-duration: 0.5s;"  aria-hidden="true"></i>
+            <id="bottunUndefine" onclick="addToList(2),vote()" ><i class="btn btn-warning btn-lg fa-solid fa-face-meh fa-beat m-1 shadow mb-4" aria-hidden="true"></i>
+            <id="bottonUnlike" onclick="addToList(3),vote()" ><i class="btn btn-danger btn-lg fa-solid fa-face-frown fa-beat m-1 shadow mb-4" style="--fa-animation-duration: 2s;" aria-hidden="true"></i>
+          </div>
+           <a class="btn btn-info" onclick="showOrHide(), vote()">Següent acudit</a>
+        </div>
+    </div>
+  </section>
+
+    <script src="./dist/index.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
